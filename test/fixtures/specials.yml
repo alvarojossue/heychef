@@ -2,12 +2,14 @@
 
 one:
   name: MyString
-  description: MyText
+  description: MyString
   price: 1.5
   delivery: false
+  restaurant_id: 1
 
 two:
   name: MyString
-  description: MyText
+  description: MyString
   price: 1.5
   delivery: false
+  restaurant_id: 1
