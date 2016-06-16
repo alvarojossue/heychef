@@ -7,7 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<ul>
+		<li class="nav-item">
+  			<%= link_to "Sign out", destroy_restaurant_session_path, method: :delete %>
+  		</li>
+  		<li class="nav-item">
+  			<%= link_to "Log in", new_restaurant_session_path %>
+  		</li>
+		<li class="nav-item"><%= link_to "Sign up", new_restaurant_registration_path%>
+		</li>
+	</ul>
 <%= yield %>
 
 </body>

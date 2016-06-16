@@ -33,9 +33,7 @@ class DeviseCreateRestaurants < ActiveRecord::Migration
       t.string :name
       t.string :address
       t.string :phone
-      t.text :special
-      t.float :price
-      t.string :type
+      t.string :category
 
       t.timestamps null: false
     end
