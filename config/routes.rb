@@ -2,6 +2,13 @@ Rails.application.routes.draw do
   
   devise_for :restaurants
   root 'pages#home'
+
+  get '/specials' => 'specials#index'
+  get '/specials/new' => 'specials#new'
+  get '/specials/:id' => 'specials#show'
+  post '/specials' => 'specials#create'
+  get '/specials/:id/edit' => 'specials#edit'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

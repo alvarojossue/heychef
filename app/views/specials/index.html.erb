@@ -1,0 +1,7 @@
+Specials for <%= @the_restaurant.name %>
+
+<% @the_specials.reverse.each do |spe| %>
+<ul>
+<li><a href="/specials/<%=spe.id%>"><%=spe.name%></a>
+</ul> 
+<% end %>
